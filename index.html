@@ -161,11 +161,29 @@
         <!-- Contact -->
         <article id="contact">
           <h2 class="major">Заполните формы</h2>
-          <form method="post" action="/submit-form">
+
+          <p><strong>Контактная информация:</strong></p>
+          <ul>
+            <li><strong>Организация:</strong> Goodfellas elektrikas</li>
+            <li><strong>Специалист:</strong> Федоренко Роман Петрович</li>
+            <li>
+              <strong>Телефон:</strong>
+              <a href="tel:+37066614501">+370 666 14501</a>
+            </li>
+            <li>
+              <strong>E-mail:</strong>
+              <a href="mailto:goodfellaselektrikas@gmail.com"
+                >goodfellaselektrikas@gmail.com</a
+              >
+            </li>
+            <li><strong>Адрес:</strong> Kalvarijų g. 143, LT-08221 Vilnius</li>
+          </ul>
+
+          <form action="https://formspree.io/f/mqaezbog" method="POST">
             <div class="fields">
               <div class="field half">
                 <label for="name">Ваше имя:</label>
-                <input type="text" name="name" id="name" />
+                <input type="text" name="name" id="name" required />
               </div>
               <div class="field half">
                 <label for="email">Ваш имейл:</label>
@@ -173,7 +191,12 @@
               </div>
               <div class="field">
                 <label for="message">Ваше сообщение:</label>
-                <textarea name="message" id="message" rows="4"></textarea>
+                <textarea
+                  name="message"
+                  id="message"
+                  rows="4"
+                  required
+                ></textarea>
               </div>
             </div>
             <ul class="actions">
